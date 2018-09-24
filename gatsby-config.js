@@ -48,19 +48,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [somePostCssPlugin()],
-        precision: 8, // SASS default: 5
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
