@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 
 class Navigation extends Component {
   items = [
-    { path: '/', name: 'ホーム' },
     { path: '/info/', name: '教会案内' },
     { path: '/worship/', name: '礼拝・集会案内' },
     { path: '/access/', name: 'アクセス' },
@@ -15,27 +14,33 @@ class Navigation extends Component {
   styles = {
     nav: {
       position: 'absolute',
-      top: '35px',
-      right: 0
+      top: 0,
+      right: 0,
+      height: '77px',
     },
     ul: {
       listStyle: 'none',
-      display: 'flex'
+      height: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      margin: 0,
     },
     li: {
-      marginLeft: '1.6rem',
-      marginRight: '1.6rem'
+      margin: '0 .4rem',
+      fontSize: '0.9rem'
     },
     a: {
       textDecoration: 'none',
-      color: '#fff'
+      color: '#fff',
+      padding: '26px 1rem'
     }
   }
 
 
   render() {
     return (
-      <nav style={this.styles.nav}>
+      <nav className="gnav" style={this.styles.nav}>
         <ul style={this.styles.ul}>
         { 
           this.items.map((data, index) => {

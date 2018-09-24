@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Navigation from './navigation'
+import logo from '../images/header_logo.png'
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: '#20232a',
       marginBottom: '1.45rem',
     }}
   >
@@ -13,18 +14,12 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '0.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
+      <h1 style={{margin: 0}}>
+        <Link to='/'>
+          <img src={logo} alt='ニューレベレーションチャーチ' width='240' style={{margin: 0}} />
         </Link>
       </h1>
     </div>
