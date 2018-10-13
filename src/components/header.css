@@ -1,0 +1,28 @@
+#navButton {
+  display: block;
+  position: fixed;
+  top: 7px;
+  right: 0;
+  
+}
+.hamburger-box {
+  width: 30px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background: #fff;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+}
+
+
+@media (min-width: 961px) {
+  #navButton {
+    display: none;
+  }
+}

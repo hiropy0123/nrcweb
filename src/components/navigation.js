@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 // import PropTypes from 'prop-types'
 // import Helmet from 'react-helmet'
+import './navigation.css'
 
 class Navigation extends Component {
   items = [
@@ -12,12 +13,6 @@ class Navigation extends Component {
   ]
 
   styles = {
-    nav: {
-      position: 'absolute',
-      top: 0,
-      right: 0,
-      height: '77px',
-    },
     ul: {
       listStyle: 'none',
       height: '100%',
@@ -37,10 +32,9 @@ class Navigation extends Component {
     }
   }
 
-
   render() {
     return (
-      <nav className="gnav" style={this.styles.nav}>
+      <nav id="gnav" className="gnav">
         <ul style={this.styles.ul}>
         { 
           this.items.map((data, index) => {
@@ -56,6 +50,5 @@ class Navigation extends Component {
     )
   }
 }
-
 
 export default Navigation
